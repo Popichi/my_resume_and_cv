@@ -1,0 +1,483 @@
+%-------------------------
+% Resume in Latex
+% Based off of: https://github.com/sb2nov/resumeta
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+% ATS-friendly settings
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% This command will take a single argument that contains all your skills listed in a comma-separated format.
+\newcommand{\resumeSkillSimple}[1]{
+  \item \small{#1}
+}
+
+\newcommand{\resumeSkillExperience}[2]{
+  \item \small{\textbf{#1}: #2} \vspace{-10pt}
+}
+
+\newcommand{\resumeLanguage}[2]{
+  \item
+    \textbf{#1}: #2 \vspace{-10pt}
+}
+
+\newcommand{\resumeCourse}[3]{
+  \item
+    \textbf{#1} \\
+    {\small #2, #3} \vspace{-5pt}
+}
+
+\newcommand{\resumeOrganization}[3]{
+  \item
+    \textbf{#1} \\
+    \textit{#2} \hfill #3 \vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Anil Celik Maral} \\ \vspace{1pt}
+    \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +49 152 24885420 ~ \href{mailto:anilcelikmaral@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{anilcelikmaral@gmail.com}} ~ 
+    \href{https://anilcelikmaral.com/}{\raisebox{-0.2\height}\faGlobe\ \underline{anilcelikmaral.com}}  ~
+    \href{https://www.linkedin.com/in/anil-celik-maral/}{\raisebox{-0.2\height}\faLinkedin\ \underline{anil-celik-maral}}  ~
+    \href{https://github.com/Popichi}{\raisebox{-0.2\height}\faGithub\ \underline{Popichi}}
+    \vspace{-10pt}  
+    
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical University of Munich}{April 2022 -- Present}
+      {Master of Science - MS, Informatics: Games Engineering}{2.284 / 5}
+      \resumeSubheading
+      {University of California, Santa Cruz}{June 2015 -- June 2019}
+      {Bachelor of Science - BS, Robotics Engineering}{1.3 / 5}
+
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+%\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+       
+    %\resumeSubHeadingListEnd
+
+\vspace{-10pt}
+% -----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Game Developer}{May 2022 -- Jan 2024}
+      {Peanut Entertainment}{Ankara, Turkey - Remote}
+      \resumeItemListStart
+        % \resumeItem{Enhanced \textbf{Bluetooth Firmware} through feature development and bug fixing.}
+        % \resumeItem{Implemented an \textbf{automated testing and verification framework}, reducing software testing time by 60 \%.}
+        \resumeItem{Developing games using \textbf{Unity}, \textbf{Unreal Engine} and \textbf{Blender}.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Robotics Engineer}{Jan 2020 -- Apr 2022}
+      {ERISIM A.S.}{Ankara, Turkey - On Site}
+      \resumeItemListStart
+        \resumeItem{Drew and designed the \textbf{P \& ID} / \textbf{flow diagram}s for \textbf{gypsum production}, \textbf{gypsum based dry-mix production and plasterboard production plants}. This process included analyzing the input material with regards to its chemical composition, keeping in mind the desires of the customer and necessities of the project.}
+        \resumeItem{Wrote programs for the \textbf{PLC automation systems} used in gypsum production, gypsum based dry-mix production and plasterboard production plants.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Embedded Systems Engineer Intern}{Sep 2019 -- Dec 2019}
+      {Archer Components}{San Francisco Bay Area - On Site}
+      \resumeItemListStart
+        \resumeItem{Developed automation solutions using \textbf{IoT}.}
+        \resumeItem{Utilizing \textbf{AWS}, \textbf{Arduino}, \textbf{ZigBee}, \textbf{C} and various other microcontrollers and programming languages.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Mechanical Test Engineer Intern}{Jun 2018 - Sep 2018}
+      {ERISIM A.S.}{Ankara, Turkey - On Site}
+      \resumeItemListStart
+        \resumeItem{Tested various types of machinery designed by mechanical engineers using standard and nonstandard mechanical tests.}
+        \resumeItem{Used data acquisition software/hardware to prepare reports of tested machinery.}
+        \resumeItem{Helped in the CAD design (\textbf{SolidWorks}) and manufacturing of various test fixtures.}
+        \resumeItem{Operated power and light duty machine tools.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {PLC Programmer Intern}{Jun 2017 - Sep 2017}
+      {Epromak}{Ankara, Turkey - On Site}
+      \resumeItemListStart
+        \resumeItem{Wrote programs for the \textbf{PLC automation systems} used in gypsum and dry-mixing plants mostly for \textbf{SIEMENS S7-300 PLCs}.}
+        \resumeItem{Tested the programs.}
+        \resumeItem{Documented and organized the programs to be ready to be commissioned on site.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Researcher}{Nov 2015 - Jul 2017}
+      {University of California, Santa Cruz}{Santa Cruz, California - On Site}
+      \resumeItemListStart
+        \resumeItem{Worked under computer engineering professor Mircea Teodorescu and \textbf{modeled} the \textbf{tensegrity robots} and sketched them in \textbf{AutoCAD Inventor}.}
+        \resumeItem{Did \textbf{stress analysis/simulation} of the tensegrity robots using \textbf{NASA Tensegrity Robotics Toolkit (NTRT)}. }
+        \resumeItem{Built the prototypes of the tensegrity robots by \textbf{3D printing/prototyping} for testing purposes.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \vspace{-5pt}
+  \resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/wasmann/The-Custodian}{\color{blue}The Custodian Video Game}}} {}
+    \resumeItemListStart
+      \resumeItem{Developed a card based, continous timed 2D action RPG in \textbf{Unity}.}
+    \resumeItemListEnd 
+
+  \vspace{-13pt}
+  \resumeProjectHeading
+    {\textbf{\href{https://gitlab.lrz.de/ss2023-gamelab/chaoscoasterv2}{\color{blue}Chaos Coaster Video Game}}} {}
+    \resumeItemListStart
+      \resumeItem{Developed an 3D FPS in \textbf{Unity}. Models were designed in \textbf{Blender}. The enemies were trained using machine learning using \textbf{Unity}'s \textbf{ML-Agent}s.}
+    \resumeItemListEnd
+
+  \vspace{-13pt}
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/Hershey988/deepmap_api}{\color{blue}DeepMap Autonomous Mobile Robot Project}}} {}
+    \resumeItemListStart
+      \resumeItem{Volunteered in DeepMap's autonomous mobile robot project.}
+      \resumeItem{Coded in \textbf{C++} and \textbf{Python} to interact with DeepMap’s maps and sensor rig, that consists of a \textbf{GPS}, a \textbf{LIDAR}, an \textbf{IMU unit} and two \textbf{stereo cameras}, to autonomously drive the DeepMap autonomous mobile robot.}
+      \resumeItem{Integrated ROS, DeepMap’s API and our own code, to have the ability to navigate on roads and simulated our robot in Gazebo ROS before deployment.}
+      \resumeItem{\textbf{Designed} the robot using \textbf{SolidWorks} and doing \textbf{statics} and \textbf{kinematics} calculations.}
+    \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%\section{Achievements}
+%\resumeItemListStart
+%\resumeItem {\textbf{Codeforces:} \textbf{Specialist (1522)} rated and solved \textbf{350+} problems.
+%     \href{https://codeforces.com/profile/akshatverma}
+%     {\textbf{Profile}: \color{blue}akshatverma}}
+
+%     \resumeItem {\textbf{LeetCode:} \textbf{Top 16.14 \%}. Solved}\textbf{450+} questions. 
+%     \href{https://leetcode.com/akshatverma}
+%     {\textbf{Profile}: \color{blue} akshatverma}
+     
+%    \resumeItem {\textbf{CodeChef:} \textbf{4 star (1836)} rated and solved \textbf{200+} problems.
+%     \href{https://www.codechef.com/users/akshatverma}
+%    {\textbf{Profile}: \color{blue} akshatverma}}
+        
+%    \resumeItem{Secured \textbf{Global Rank 35} in AlgoManiac held on CodeChef.}
+ 
+%    \resumeItem {Ranked among the top \textbf{68} out of \textbf{7271} teams in \textbf{HackOn with Amazon 2022.}}
+
+%    \resumeItem{\textbf{Finalists} in Ethos Hackathon 2023 conducted by IIT Guwahati.}
+    
+%    \resumeItem{\textbf{Finalists} in UIDAI Hackathon 2021 among \textbf{3000+ teams.}}
+    
+    % \resumeItem{Ranked among \textbf{top 2.5 percentile} students in \textbf{JEE Main 2020}, among \textbf{1.1 million students}.}
+  
+ 
+%\resumeItemListEnd
+% \vspace{-8pt}
+%
+%-----------SKILLS-----------
+%\section{Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%    \small{\item{
+%      \textbf{}{Unity, Unreal Engine, Blender, C++, C\#, C, Python, Java, MIPS Assembly, Verilog, PLC Ladder Logic, Matlab, AutoCAD, Autodesk Inventor, SolidWorks, Robot Operating System (ROS), Gazebo ROS, OpenCV}
+     %\textbf{Languages}{: C++, C, Kotlin, Python} \\
+     %\textbf{Technologies}{: HTML, XML, Node.js} \\
+     %\textbf{CS Fundamentals}{: OOPs, Operating Systems, Database Management Systems, Computer Networks.} \\
+     %\textbf{Other Tools}{: Git, Github, Android Studio, VS Code, MATLAB, Adobe Softwares, Jira, Bitbucket, Vim.}
+%    }}
+% \end{itemize}
+% \vspace{-20pt}
+
+% List skills in a comma seperated format.
+%\section{Skills}
+%\begin{itemize}[leftmargin=0.15in, label={}]
+%  \resumeSkillSimple{Unity, Unreal Engine, Blender, C++, C\#, C, Python, Java, MIPS Assembly, Verilog, PLC Ladder Logic, Matlab, AutoCAD, Autodesk Inventor, SolidWorks, Robot Operating System (ROS), Gazebo ROS, OpenCV}
+%\end{itemize}
+%\vspace{-20pt}
+
+% List skills in an item by item format to pair Skill: X Yeas of Experience
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \resumeSkillExperience{Unity}{2 Years of Experience}
+  \resumeSkillExperience{Unreal Engine}{2 Years of Experience}
+  \resumeSkillExperience{Blender}{2 Years of Experience}
+  \resumeSkillExperience{C++}{8 Years of Experience}
+  \resumeSkillExperience{C\#}{2 Years of Experience}
+  \resumeSkillExperience{C}{9 Years of Experience}
+  \resumeSkillExperience{Python}{9 Years of Experience}
+  \resumeSkillExperience{Java}{9 Years of Experience}
+  \resumeSkillExperience{MIPS Assembly}{9 Years of Experience}
+  \resumeSkillExperience{Verilog}{8 Years of Experience}
+  \resumeSkillExperience{PLC Ladder Logic}{8 Years of Experience}
+  \resumeSkillExperience{Matlab}{9 Years of Experience}
+  \resumeSkillExperience{AutoCAD}{7 Years of Experience}
+  \resumeSkillExperience{Autodesk Inventor}{9 Years of Experience}
+  \resumeSkillExperience{SolidWorks}{6 Years of Experience}
+  \resumeSkillExperience{Robot Operating System (ROS)}{6 Years of Experience}
+  \resumeSkillExperience{Gazebo ROS}{6 Years of Experience}
+  \resumeSkillExperience{OpenCV}{6 Years of Experience}
+  % Add more skills with experience here
+\end{itemize}
+\vspace{-10pt}
+
+%-----------LANGUAGES-----------
+\section{Languages}
+  \resumeSubHeadingListStart
+    \resumeLanguage
+      {English}{Native or Bilingual Proficiency}
+    \resumeLanguage
+      {Turkish}{Native or Bilingual Proficiency}
+    \resumeLanguage
+      {German}{Elementary proficiency}
+    % Add more languages here
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------INVOLVEMENT---------------
+%\section{Positions of Responsibility}
+%            \resumeItemListStart
+%            \resumeItem{\textbf{Lead, Google Developer Student Club (G-DSC), NIT-A}: Conducted and organized various sessions talking about development resources and opportunities.}
+            
+%            \resumeItem{\textbf{Android Lead, Developers and Coders Club (DCC), NIT-A}: Trained juniors to build an active coding culture, clarify doubts, and excel in Data Structures and Algorithms by providing resources.}
+            
+            % \resumeItem{\textbf{Android Study Jams Facilitator}: Mentored and Trained 100+ students to kick-start their Android Development journey by providing resources and teaching.}
+            
+%            \resumeItemListEnd
+
+%-----------COURSES-----------
+\section{Courses}
+  \resumeSubHeadingListStart
+    \resumeCourse
+      {3D Scanning \& Motion Capture}{IN2354}{Technical University of Munich}
+    \resumeCourse
+      {3D User Interfaces}{IN2111}{Technical University of Munich}
+    \resumeCourse
+      {Additional Advanced Practical Course, Computer Games Laboratory}{IN2257}{Technical University of Munich}
+    \resumeCourse
+      {Advanced Practical Course, Computer Games Laboratory}{IN2106}{Technical University of Munich}
+    \resumeCourse
+      {Advanced Programming}{CMPS 109}{University of California, Santa Cruz}
+    \resumeCourse
+      {Advanced Seminar Course, Master Seminar - Recent Highlights in Computer Graphics and Visualization}{IN2107}{Technical University of Munich}
+    \resumeCourse
+      {Algorithms and Abstract Data Types}{CMPS 101}{University of California, Santa Cruz}
+    \resumeCourse
+      {Applied Discrete Mathematics}{CMPE 16}{University of California, Santa Cruz}
+    \resumeCourse
+      {Augmented Reality}{IN2018}{Technical University of Munich}
+    \resumeCourse
+      {Basic Mathematical Methods for Imaging and Visualization}{IN2124}{Technical University of Munich}
+    \resumeCourse
+      {Calculus for Science, Engineering, and Mathematics}{MATH 19A}{University of California, Santa Cruz}
+    \resumeCourse
+      {Calculus for Science, Engineering, and Mathematics}{MATH 19B}{University of California, Santa Cruz}
+    \resumeCourse
+      {Computer Systems and Assembly Language}{CMPE 12}{University of California, Santa Cruz}
+    \resumeCourse
+      {Computer Systems and C Programming}{CMPE 13}{University of California, Santa Cruz}
+    \resumeCourse
+      {Concepts of C++ Programming}{IN2377}{Technical University of Munich}
+    \resumeCourse
+      {Database Systems on Modern CPU Architectures}{IN2118}{Technical University of Munich}
+    \resumeCourse
+      {Distributed Systems}{IN2259}{Technical University of Munich}
+    \resumeCourse
+      {Feedback Control Systems}{CMPE 141}{University of California, Santa Cruz}
+    \resumeCourse
+      {Fundamentals of Robot Kinematics and Dynamics}{CMPE 10}{University of California, Santa Cruz}
+    \resumeCourse
+      {Game Engine Design}{IN0038}{Technical University of Munich}
+    \resumeCourse
+      {Game Physics}{IN0037}{Technical University of Munich}
+    \resumeCourse
+      {Geometry Processing}{IN2297}{Technical University of Munich}
+    \resumeCourse
+      {Image Synthesis}{IN2015}{Technical University of Munich}
+    \resumeCourse
+      {Individual Study or Research}{CMPE 198F}{University of California, Santa Cruz}
+    \resumeCourse
+      {Introduction to Data Structures}{CMPS 12B}{University of California, Santa Cruz}
+    \resumeCourse
+      {Introduction to Electronic Circuits}{EE 101}{University of California, Santa Cruz}
+    \resumeCourse
+      {Introduction to European Visual Culture}{HAVC 30}{University of California, Santa Cruz}
+    \resumeCourse
+      {Introduction to Mechatronics}{CMPE 118}{University of California, Santa Cruz}
+    \resumeCourse
+      {Introduction to Physics I}{PHYS 5A}{University of California, Santa Cruz}
+    \resumeCourse
+      {Introduction to Physics III}{PHYS 5C}{University of California, Santa Cruz}
+    \resumeCourse
+      {Introduction to Physics III}{PHYS 5C}{University of California, Santa Cruz}
+    \resumeCourse
+      {Introduction to Statics, Dynamics, and Biomechanics}{CMPE 9}{University of California, Santa Cruz}
+    \resumeCourse
+      {Introductory Macroeconomics: Aggregate Economic Activity}{ECON 2}{University of California, Santa Cruz}
+    \resumeCourse
+      {Linear Algebra}{MATH 21}{University of California, Santa Cruz}
+    \resumeCourse
+      {Logic Design}{CMPE 100}{University of California, Santa Cruz}
+    \resumeCourse
+      {Mathematical Methods for Engineers II - Differential Equations}{AMS 20}{University of California, Santa Cruz}
+    \resumeCourse
+      {Microprocessor System Design}{CMPE 121}{University of California, Santa Cruz}
+    \resumeCourse
+      {Models of Robotic Manipulation}{CMPE 215}{University of California, Santa Cruz}
+    \resumeCourse
+      {Probability and Statistics for Engineers - Introduction to Probability}{CMPE 107}{University of California, Santa Cruz}
+    \resumeCourse
+      {Requirements Engineering}{IN2394}{Technical University of Munich}
+    \resumeCourse
+      {Robot Automation: Intelligence through Feedback Control}{CMPE 8}{University of California, Santa Cruz}
+    \resumeCourse
+      {Robot Motion Planning}{IN2138}{Technical University of Munich}
+    \resumeCourse
+      {Senior Design Project I}{CMPE 129A}{University of California, Santa Cruz}
+    \resumeCourse
+      {Senior Design Project II}{CMPE 129B}{University of California, Santa Cruz}
+    \resumeCourse
+      {Sensing and Sensor Technologies (Sensor Design)}{CMPE 167}{University of California, Santa Cruz}
+    \resumeCourse
+      {Signals and Systems}{EE 103}{University of California, Santa Cruz}
+    \resumeCourse
+      {Technical Writing for Computer Engineers}{CMPE 185}{University of California, Santa Cruz}
+    \resumeCourse
+      {Virtual Reality}{IN5701}{Technical University of Munich}
+    \resumeCourse
+      {Visual Data Analytics}{IN2026}{Technical University of Munich}   
+      % Add more courses here
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------ORGANIZATIONS-----------
+\section{Organizations}
+  \resumeSubHeadingListStart
+    \resumeOrganization
+      {Tau Beta Pi, The Engineering Honor Society}{Member}{May 2018 - Present}
+    % Add more organizations here
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+\end{document}
