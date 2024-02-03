@@ -1,0 +1,1 @@
+This repository contains the history of the changes I made to the LaTex code for my CV, resume and cover letter.
